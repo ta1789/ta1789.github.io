@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Tanmay Mehrotra</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #28a745;
+        }
+
+        /* Main content below nav */
+        header {
+            margin-top: 80px; /* To give space for the fixed nav */
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .projects-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Project Cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            color: #777;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .project-card a:hover {
+            background-color: #218838;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html" style="color: white; font-size: 24px; font-weight: bold; text-decoration: none;">Tanmay Mehrotra</a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="resume.pdf" target="_blank">Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <h2>Explore My Work</h2>
+        
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Emotion based Music Recommendation System</h3>
+                <p>This Music Recommendation system first detects the emotion of the user by its facial image and recommends songs based on the emotion.</p><br><br><br>
+                <a href="https://github.com/ta1789/Emotion-Detection-and-Music-Recommendation" target="_blank">Project Link</a>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>QnA System Using XLNet</h3>
+                <p>Developed BiGenXL, a model combining XLNet and Top K Beam Bidirectional Text Generation Algorithm, to generate elongated text, and implemented it as a chatbot-based question-answering system for abstractive answers on single-word answer datasets.</p><br><br>
+                <a href="https://github.com/ta1789/Text-Generation-Using-XLNet" target="_blank">Project Link</a>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Abstractive News Article Text Summarization</h3>
+                <p>A tool that automates the data cleaning process, removing missing values, outliers, and incorrect formats. Built in Python with Pandas.</p><br><br><br>
+                <a href="https://drive.google.com/drive/folders/12ad_y1MPHVJXr_WROLFbc1uf3VqzOJq9?usp=sharing" target="_blank">Project Link</a>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="project-card">
+                <img src="project4.jpg" alt="Project 4">
+                <h3>Spam Detector</h3>
+                <p>Developed an application named Spam Detector which used Support Vector Machine
+                    Machine algorithm to detect all the mails for spam and ham for the given source email ID in your Gmail</p>
+                <a href="https://github.com/ta1789/Spam-Detector" target="_blank">Project Link</a>
+            </div>
+
+            <!-- Add More Project Cards as needed -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tanmay Mehrotra. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

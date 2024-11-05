@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #28a745;
+        }
+
+        /* Main content below nav */
+        header {
+            margin-top: 80px; /* To give space for the fixed nav */
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        .intro {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: center;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .intro .button {
+            padding: 12px 30px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .intro .button:hover {
+            background-color: #218838;
+        }
+
+        .services {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .service {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .service h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .service p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <a href="index.html" style="color: white; font-size: 24px; font-weight: bold; text-decoration: none;">Tanmay Mehrotra</a>
+        </div>
+        <ul>
+            <li><a href="project.html">My Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="resume.pdf" target="_blank">Download Resume</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h2>Hello, I'm Tanmay Mehrotra</h2>
+        <p>I am a passionate Data Science Engineer with a focus on using data to drive innovation and business solutions. With skills in machine learning, data visualization, and big data technologies, I bring impactful insights and predictive solutions to real-world problems.</p>
+        <a href="contact.html" class="button">Get in Touch</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service">
+            <h3>Data Analysis</h3>
+            <p>Transform raw data into meaningful insights using statistical methods and advanced analytics tools.</p>
+        </div>
+        <div class="service">
+            <h3>Machine Learning</h3>
+            <p>Build predictive models using various machine learning techniques to optimize decision-making processes.</p>
+        </div>
+        <div class="service">
+            <h3>Data Visualization</h3>
+            <p>Create interactive visualizations that allow clients to understand complex data and trends at a glance.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tanmay Mehrotra. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
